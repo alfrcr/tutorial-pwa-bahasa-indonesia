@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="PWA Dasar">
+  <meta name="apple-mobile-web-app-title" content="PWA Dasar">
+  <meta name="theme-color" content="#ee6e73">
+  <meta name="msapplication-navbutton-color" content="#ee6e73">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/favicon.ico">
+
+  <link rel="stylesheet" href="/css/materialize.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <title>PWA Dasar</title>
+</head>
+<body>
+  <ul id="slide-out" class="side-nav">
+    <li><a href="#!">First Link</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+
+  <nav>
+    <div class="nav-wrapper custom-theme">
+      <ul id="nav-mobile" class="left">
+        <li><a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a></li>
+      </ul>
+      <ul id="nav-mobile" class="right">
+        <li><a href="#search"><i class="material-icons">search</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div id="timeline">
+    <div id="preloader">
+      <div class="preloader-wrapper small active">
+        <div class="spinner-layer spinner-green-only">
+          <div class="circle-clipper left">
+            <div class="circle"></div>
+          </div><div class="gap-patch">
+            <div class="circle"></div>
+          </div><div class="circle-clipper right">
+            <div class="circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <footer class="page-footer custom-theme">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">PWA Dasar</h5>
+          <p class="grey-text text-lighten-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, culpa, nam eos, quisquam aliquid non, at explicabo pariatur consequatur fugiat fuga! Rem saepe distinctio excepturi corporis, dicta hic! Ea, vel.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      © 2017 Copyright Text
+      <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="notification-update">
+    <div class="notification-wrapper">
+      <div class="text-updates">New updates are available.</div>
+      <div class="button-updates">
+        <button id="update-sw">REFRESH</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/materialize.min.js"></script>
+  <script type="text/javascript" src="/js/app.js"></script>
+  <script type="text/javascript" src="/js/sw-controller.js"></script>
+  <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>
